@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends Rescue - Cats and Rabbits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Furry Friends Rescue Logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#featured-animals">Our Animals</a></li>
+                    <li><a href="#how-to-help">How to Help</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-image-container">
+                <img src="images/hero-image.jpg" alt="Rescued cat and dog together" class="hero-image">
+            </div>
+            <div class="hero-content" >
+                <h1  >Give a Forever Home to Furry Friends in Need</h1>
+                <p  >We rescue, rehabilitate, and rehome cats and rabbits</p>
+                <div class="cta-buttons"  >
+                    <a href="#adopt" class="cta-button">Adopt Now</a>
+                    <a href="#donate" class="cta-button">Donate</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>Providing love, care, and new beginnings for cats and rabbits in need.</p>
+        </section>
+
+        <section id="featured-animals">
+            <h2 >Featured Animals</h2>
+            <div class="animal-filters"  >
+                <!-- ... filter buttons ... -->
+            </div>
+            <div class="animal-grid">
+                <!-- Animal cards will be added dynamically, so we'll add AOS attributes in JavaScript -->
+            </div>
+            <button id="load-more" class="cta-button" >Load More</button>
+        </section>
+
+        <section id="impact">
+            <h2>Our Impact</h2>
+            <div class="impact-stats">
+                <div class="impact-stat">
+                    <i class="fas fa-paw"></i>
+                    <h3>500+</h3>
+                    <p>Animals Rescued</p>
+                </div>
+                <div class="impact-stat">
+                    <i class="fas fa-home"></i>
+                    <h3>300+</h3>
+                    <p>Adoptions</p>
+                </div>
+                <div class="impact-stat">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>1000+</h3>
+                    <p>Volunteer Hours</p>
+                </div>
+                <div class="impact-stat">
+                    <i class="fas fa-heart"></i>
+                    <h3>$50K+</h3>
+                    <p>Donations Received</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-help">
+            <h2>How You Can Help</h2>
+            <div class="help-options">
+                <div class="help-option">
+                    <img src="images/icon-adopt.png" alt="Adoption icon" class="help-icon">
+                    <h3>Adopt</h3>
+                    <p>Give a loving home to a cat or rabbit in need. Our animals are vaccinated, spayed/neutered, and ready for their forever homes.</p>
+                    <a href="#adopt" class="cta-button">View Adoptable Pets</a>
+                </div>
+                <div class="help-option">
+                    <img src="images/icon-volunteer.png" alt="Volunteer icon" class="help-icon">
+                    <h3>Volunteer</h3>
+                    <p>Lend a hand at our shelter. We need help with animal care, event planning, and administrative tasks.</p>
+                    <a href="#volunteer" class="cta-button">Join Our Team</a>
+                </div>
+                <div class="help-option">
+                    <img src="images/icon-donate.png" alt="Donation icon" class="help-icon">
+                    <h3>Donate</h3>
+                    <p>Your financial support helps us provide food, medical care, and shelter to animals in need.</p>
+                    <a href="#donate" class="cta-button">Make a Donation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="success-stories">
+            <h2>Success Stories</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="images/success-story1.jpg" alt="Happy adopted pet with new family" loading="lazy">
+                        <div class="story-content">
+                            <h3>Max's New Beginning</h3>
+                            <p>After months in our care, Max found his forever home with the Johnson family.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/success-story2.jpg" alt="Rescued cat in its new home" loading="lazy">
+                        <div class="story-content">
+                            <h3>Bella's Recovery</h3>
+                            <p>Bella overcame health issues and is now thriving with her adoptive parents.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/success-story3.jpg" alt="Happy rabbit in a loving environment" loading="lazy">
+                        <div class="story-content">
+                            <h3>Hoppy Ever After</h3>
+                            <p>Our rescue rabbit found joy and companionship with the Smith children.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" aria-label="Previous story">&lt;</button>
+                <button class="carousel-control next" aria-label="Next story">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Furry Friends Rescue</h3>
+                <p>Dedicated to rescuing, rehabilitating, and rehoming cats and rabbits in need.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#animals">Adoptable Pets</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@furryfriendsrescue.org</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Rescue Lane, Anytown, ST 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Furry Friends Rescue. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
